@@ -101,7 +101,7 @@ body {
 }
 .current::after {
   position: absolute;
-  bottom: -3px;
+  bottom: -1px;
   left: 0;
   content: '';
   display: block;
@@ -185,7 +185,7 @@ body {
   min-height: 50px;
 
   transition: background-color 250ms var(--cubic-bezier), color 250ms var(--cubic-bezier),
-  box-shadow 250ms var(--cubic-bezier);
+    box-shadow 250ms var(--cubic-bezier);
 }
 .decision-button:hover,
 .decision-button:focus {
@@ -290,6 +290,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -556,9 +557,9 @@ body {
   display: block;
   width: 100%;
 }
-.example .link{
+.example .link {
   display: block;
-   transition: box-shadow 250ms var(--cubic-bezier);
+  transition: box-shadow 250ms var(--cubic-bezier);
 }
 .example .link:hover,
 .example .link:focus {
@@ -595,7 +596,7 @@ body {
 }
 
 .example .link:hover .portf-overlay,
-.example .link:focus .portf-overlay{
+.example .link:focus .portf-overlay {
   transform: translateY(0);
   opacity: 1;
 }
@@ -626,6 +627,7 @@ body {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
